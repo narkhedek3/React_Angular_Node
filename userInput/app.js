@@ -25,7 +25,7 @@ function runApp() {
 
     if(userInput.toLowerCase().trim() == 'exit') {
       appIsRunning = false;
-      console.log("good bye...");
+      console.log("Good bye...!!");
     }
   }
 
