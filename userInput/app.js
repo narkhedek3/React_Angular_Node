@@ -18,7 +18,16 @@ function runApp() {
 
   let myCars = [car, car1, racingCar];
 
-  
+  let appIsRunning = true;
+  while(appIsRunning) {
+    let userInput = readLine.question("Enter name : ");
+    console.log(userInput);
+
+    if(userInput.toLowerCase().trim() == 'exit') {
+      appIsRunning = false;
+      console.log("good bye...");
+    }
+  }
 
 }
 
