@@ -1,5 +1,7 @@
 const Car = require('./src/car/Car');
 const RacingCar = require('./src/car/RacingCar');
+const readLine = require('readline-sync');
+
 const i = require('./src/lib/customArrayFunctions');
 
 // custom forEach 
@@ -15,6 +17,8 @@ function runApp() {
   let racingCar = new RacingCar({brandName: 'Audi', modelName: 'Q7', releaseYear: 2010, category: 'SUV'});
 
   let myCars = [car, car1, racingCar];
+
+  
 
 }
 
