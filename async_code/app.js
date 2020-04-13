@@ -18,8 +18,12 @@ async function runApp() {
     })
     .then((fromLastThen) => {
       console.log(fromLastThen);
+      throw new Error('error');
     })
     .catch((error) => {
+      console.log(error);
+      throw new Error('error from catch');
+    }).catch((error) => {
       console.log(error);
     });
 
