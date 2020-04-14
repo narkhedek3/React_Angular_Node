@@ -1,5 +1,9 @@
 const myApi = require('./src/lib/api');
 
+// Destructurization we can also import object properties as follows 
+
+// const { getDBData, getDBDataUsingCallBack, getDBDataUsingPromise } = require('./src/lib/api');
+
 async function runApp() {
   let data = myApi.getDBData();
   console.log(data, 'here we are not getting expected data');
